@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM ubuntu
 MAINTAINER syed "syedafzal22334@gmail.com"
 COPY . /app
 WORKDIR /app
