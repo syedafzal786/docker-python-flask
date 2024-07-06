@@ -1,5 +1,4 @@
 FROM ubuntu:23.10
-ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y python3.6 python3-pip && \
     apt-get clean && \
@@ -7,6 +6,6 @@ RUN apt-get update && \
 MAINTAINER syed "syedafzal22334@gmail.com"
 COPY . /app
 WORKDIR /app
-RUN pip3 install -r requirements.txt
-ENTRYPOINT ["python3"]
+RUN pip install -r requirements.txt
+ENTRYPOINT ["python"]
 CMD ["app.py"]
