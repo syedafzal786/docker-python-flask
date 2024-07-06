@@ -7,6 +7,5 @@ RUN apt-get update && \
 MAINTAINER syed "syedafzal22334@gmail.com"
 COPY . /app
 WORKDIR /app
-RUN pip3 install -r requirements.txt
 ENTRYPOINT ["python3.11"]
 CMD ["app.py"]
